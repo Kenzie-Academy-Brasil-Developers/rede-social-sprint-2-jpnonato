@@ -18,29 +18,24 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
+}    
 
 :root{
-  --cor-texto: #262626;
-  --border-color: rgb(74, 133, 243);
-  --cor--texto-footer: rgb(141, 135, 135);
+	--cor-texto: #262626;
+	--border-color: rgb(74, 133, 243);
+	--cor--texto-footer: rgb(141, 135, 135);
 }
-
+	
 body{
 	margin-top: 15px;
 	margin-left: 15px;
 }
 
-.content{
-	margin: 0 auto;
-	width: 935px;
-}
-
 .profile-photo img{
 	margin: 10px 0 50px 90px;
-    border: var(--border-color) solid;
-    border-radius: 100%;
-    width: 150px;
+	border: var(--border-color) solid;
+	border-radius: 100%;
+	width: 150px;
 }
 
 .profile-content{
@@ -49,15 +44,15 @@ body{
 
 .profile-info{
 	margin: 15px 0 15px 50px;
-    font-family: Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	color: var(--cor-texto);
 	width: 500px;
 }
 
 .profile-info ul{
 	list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 8px;
 }
 
@@ -67,8 +62,8 @@ body{
 
 .profile-data{
 	display: flex;
-    justify-content: space-between;
-    width: 400px;
+	justify-content: space-between;
+	width: 400px;
 }
 
 .profile-data p span{
@@ -98,16 +93,17 @@ body{
 }
 
 .profile-posts{
+	max-width: 935px;
 	width: 935px;
-    margin-left: 20px;
+	margin-left: 20px;
 }
 
 .profile-posts nav{
 	border-top: lightgray solid;
-    width: 935px;
-    display: flex;
-    justify-content: center;
-	margin-left: -10px;
+	width: 935px;
+	display: flex;
+	justify-content: center;
+	margin-left: -19px;
 }
 
 .profile-posts ul{
@@ -128,7 +124,7 @@ body{
 	color: lightslategray;
 	border-top: lightgray solid;
 	position: relative;
-    bottom: 3px;
+	bottom: 3px;
 }
 
 .profile-posts nav a:hover{
@@ -139,145 +135,33 @@ body{
 
 .footer-nav{
 	width: 935px;
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .footer-nav a{
 	text-decoration: none;
-	margin-top: 15px;
-	margin-right: 15px;
-	margin-bottom: 5px;
+	margin: 15px 15px 5px 0;
 	color: var(--cor--texto-footer)
 }
 
 .copyright p{
 	width: 935px;
-    justify-content: center;
-    display: flex;
-    color: var(--cor--texto-footer);
+	justify-content: center;
+	display: flex;
+	color: var(--cor--texto-footer);
 }
+	
 
-@media screen and (max-width:768px) {
-	.profile-photo img{
-		margin: 10px 0 50px 90px;
-		border: var(--border-color) solid;
-		border-radius: 100%;
-		width: 150px;
-	}
-	
-	.profile-content{
-		display: flex;
-	}
-	
-	.profile-info{
-		margin: 15px 0 15px 50px;
-		font-family: Helvetica, Arial, sans-serif;
-		color: var(--cor-texto);
-	}
-	
-	.profile-info ul{
-		list-style: none;
-		display: flex;
-		flex-wrap: wrap;
-		margin-bottom: 8px;
-	}
-	
-	.profile-info h2{
-		margin-bottom: 5px;
-	}
-	
-	.profile-data{
-		display: flex;
-		justify-content: space-between;
-		width: 400px;
-	}
-	
-	.profile-data p span{
-		font-weight: bold;
-		font-size: 17px;
-	}
-	
-	.highlighted-stories ul{
-		display: flex;
-		padding-left: 62px;
-		list-style: none;
-		margin-bottom: 50px
-	}
-	
-	.highlighted-stories figure{
-		margin-right: 50px;
-	}
-	
-	.highlighted-stories ul li img{
-		width: 77px;
-		border-radius: 100%;
-		border: var(--border-color) solid;
-	}
-	
-	.add-new-highlight figcaption{
-		margin-left: 20px;
-	}
-	
-	.profile-posts{
+@media screen and (min-width:1023px){
+
+	.content{
+		margin: 0 auto;
 		width: 935px;
-		margin-left: 20px;
 	}
-	
+     
 	.profile-posts nav{
-		border-top: lightgray solid;
-		width: 935px;
-		display: flex;
-		justify-content: center;
 		margin-left: -10px;
 	}
-	
-	.profile-posts ul{
-		list-style: none;
-		display: flex;
-		flex-wrap: wrap;
-	}
-	
-	.profile-posts li img{
-		width: 293px;
-		height: 293px;
-		margin: 10px 15px 0 0;
-	}
-	
-	.profile-posts nav a{
-		margin-right: 30px;
-		text-decoration: none;
-		color: lightslategray;
-		border-top: lightgray solid;
-		position: relative;
-		bottom: 3px;
-	}
-	
-	.profile-posts nav a:hover{
-		border-top:lightslategray solid;
-		color: rgb(75, 70, 70);
-		font-weight: bold;
-	}
-	
-	.footer-nav{
-		width: 935px;
-		display: flex;
-		justify-content: center;
-	}
-	
-	.footer-nav a{
-		text-decoration: none;
-		margin-top: 15px;
-		margin-right: 15px;
-		margin-bottom: 5px;
-		color: var(--cor--texto-footer)
-	}
-	
-	.copyright p{
-		width: 935px;
-		justify-content: center;
-		display: flex;
-		color: var(--cor--texto-footer);
-	}
-	
+
 }
